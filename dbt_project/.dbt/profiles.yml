@@ -1,0 +1,12 @@
+dbt_ecomm2:
+  outputs:
+    dev:
+      dbname: dbt_warehouse
+      host: postgres
+      pass: dbt_password
+      port: 5432
+      schema: dev_schema
+      threads: 4
+      type: postgres
+      user: dbt_user
+  target: dev
